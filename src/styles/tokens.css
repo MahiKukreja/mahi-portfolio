@@ -1,0 +1,36 @@
+:root {
+  --cream:        #EADFCB;  /* primary surface: cards, nav, page background */
+  --cream-soft:   #F3ECDD;  /* derived tint: modal surface, chips, inner layers */
+  --navy:         #042842;  /* text, outer frame, dark panels */
+  --tan:          #C08E66;  /* case-studies card, secondary highlights */
+  --muted-blue:   #7192A1;  /* portrait backdrop, dividers, decorative lines */
+  --teal:         #186667;  /* Pikeazy card, hover/active states, focus accents */
+  --terracotta:   #B5572B;  /* large accent text + decorative only */
+  --terracotta-deep: #9A4121; /* terracotta buttons with cream text (AA contrast) */
+  --gold:         #FFCC4C;  /* sparing: tiny sparks, hover dots. Never body text. */
+  --status-green: #2E9E5E;  /* the "actively looking" dot only */
+
+  --navy-15: rgb(4 40 66 / 0.15);
+  --navy-55: rgb(4 40 66 / 0.55);
+  --navy-75: rgb(4 40 66 / 0.75);
+
+  --radius-frame: 28px;
+  --radius-card:  20px;
+  --radius-chip:  999px;
+  --gap:          14px;     /* gutter between cards inside the frame */
+  --frame-pad:    14px;     /* navy frame thickness */
+  --card-pad:     clamp(16px, 1.8vw, 28px);
+  --ease-apple:   cubic-bezier(0.16, 1, 0.3, 1);
+
+  --font-display: 'Sora Variable', 'Sora', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --frame-pad: 10px;
+    --gap: 10px;
+    --radius-frame: 24px;
+    --radius-card: 18px;
+  }
+}
